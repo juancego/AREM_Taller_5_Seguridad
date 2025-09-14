@@ -12,17 +12,17 @@ _13/09/2025_
 
 Durante la sesión se trabajó en el análisis y modelado de un proceso crítico dentro del contexto de la plataforma EdukIT. El equipo discutió diferentes alternativas de procesos (como ingreso de notas o procesamiento de pagos) y finalmente se decidió enfocar el ejercicio en la emisión de certificados, dado su valor legal, reputacional y el riesgo de que pueda ser falsificado o alterado. A partir de allí, se realizaron dos actividades principales: el análisis de amenazas STRIDE documentado en tabla y el modelado en BPMN del flujo.
 
-- ¿Qué se discutió con el equipo?
-Se debatió qué proceso resultaba más relevante para el ejercicio. Aunque al inicio se consideraron otros procesos más obvios bajo el contexto dado (notas, pagos), se concluyó que la emisión de certificados representaba mejor un escenario crítico de seguridad. Además, se identificaron los actores principales (estudiante, docente, administrador, plataforma y auditoría) y los sistemas involucrados en el flujo.
+- *¿Qué se discutió con el equipo?*
+    Se debatió qué proceso resultaba más relevante para el ejercicio. Aunque al inicio se consideraron otros procesos más obvios bajo el contexto dado (notas, pagos), se concluyó que la emisión de certificados representaba mejor un escenario crítico de seguridad. Además, se identificaron los actores principales (estudiante, docente, administrador, plataforma y auditoría) y los sistemas involucrados en el flujo.
 
-- ¿Qué decisiones de modelado se tomaron?
-Se decidió representar el proceso en BPMN, separando los roles en carriles para dar claridad a las responsabilidades. A cada actividad se le asoció la amenaza STRIDE más relevante, lo que permitió vincular el modelado con el análisis de riesgos. También se acordó incluir un flujo alterno en caso de falla de disponibilidad del servicio (DoS), mostrando cómo la plataforma podría activar redundancia y decidir si continuar o finalizar el proceso.
+- *¿Qué decisiones de modelado se tomaron?* 
+    Se decidió representar el proceso en BPMN, separando los roles en carriles para dar claridad a las responsabilidades. A cada actividad se le asoció la amenaza STRIDE más relevante, lo que permitió vincular el modelado con el análisis de riesgos. También se acordó incluir un flujo alterno en caso de falla de disponibilidad del servicio (DoS), mostrando cómo la plataforma podría activar redundancia y decidir si continuar o finalizar el proceso.
 
-- ¿Qué herramientas se usaron (papel, pizarra, draw.io, Astah)?
-El equipo optó por draw.io para modelar colaborativamente el BPMN, ya que ofrece los elementos necesarios para representar tareas, eventos y gateways de manera estandarizada. Para el análisis STRIDE se utilizó Excel, lo que facilitó organizar amenazas, descripciones, impactos y controles de mitigación en una tabla estructurada.
+- *¿Qué herramientas se usaron (papel, pizarra, draw.io, Astah)?*
+    El equipo optó por draw.io para modelar colaborativamente el BPMN, ya que ofrece los elementos necesarios para representar tareas, eventos y gateways de manera estandarizada. Para el análisis STRIDE se utilizó Excel, lo que facilitó organizar amenazas, descripciones, impactos y controles de mitigación en una tabla estructurada.
 
-- ¿Qué parte del trabajo se alcanzó a desarrollar?
-Se logró definir el flujo completo en BPMN y avanzar en la construcción de la tabla STRIDE. Como se establecieron divición de roles, algunos integrantes se concentraron en el diagrama mientras otros empezaron con la tabla, lo que permitió adelantar las dos partes en paralelo y dejar listo el camino para seguir refinando la actividad por fuera de la sesión.
+- *¿Qué parte del trabajo se alcanzó a desarrollar?*
+    Se logró definir el flujo completo en BPMN y avanzar en la construcción de la tabla STRIDE. Como se establecieron divición de roles, algunos integrantes se concentraron en el diagrama mientras otros empezaron con la tabla, lo que permitió adelantar las dos partes en paralelo y dejar listo el camino para seguir refinando la actividad por fuera de la sesión.
 
 ## 🧩 Boceto inicial del modelo
 
