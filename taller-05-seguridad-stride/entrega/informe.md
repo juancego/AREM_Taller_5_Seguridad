@@ -31,14 +31,17 @@ Incluya un análisis sobre:
 
 ## 🔍 Investigación complementaria
 ### Tema investigado:
-(Ej: Buenas prácticas BPMN, comparación TOGAF vs C4, principios de seguridad STRIDE, etc.)
+Principios de seguridad STRIDE
 
 ### Resumen:
-Describa en 2–3 párrafos lo investigado, citando fuentes cuando sea necesario. Incluya cómo se relaciona con el taller.
+El modelo STRIDE, según sus siglas, Tampering, Repudiation, Information Disclosure, Denial of Service y Elevation of Privilege, es un modelo encargado de clasificar las amenazas a la seguridad de un sistema en estas seis categorías [1][2]. El modelo fue desarrollado por Microsoft para identificar riesgos de seguridad informática [1]. STRIDE funciona vinculando cada tipo de amenaza a la violación de una propiedad de seguridad: la Suplantación compromete la Autenticidad, la Manipulación ataca la Integridad, el Repudio explota la falta de No repudio, la Divulgación de información afecta la Confidencialidad, la Denegación de servicio compromete la Disponibilidad, y la Elevación de privilegios se relaciona con la Autorización [1][2].
 
+La aplicación de STRIDE se basa en la descomposición de la aplicación en componentes clave para conocer su arquitectura [3]. Un elemento bastante importante es el Diagrama de Flujo de Datos, que muestra los flujos de información entre los componentes de la aplicación [3]. Una vez que se tiene el DFD, se utiliza el método STRIDE para determinar las amenazas en cada componente de la aplicación [2][3], repitiendo el proceso hasta alcanzar una situación cómoda con las amenazas restantes [3]. El objetivo final es identificar las vulnerabilidades y planificar estrategias de mitigación [2].
 ## 📚 Referencias
-- [1] Apellido, Nombre. *Título*. Año. URL o DOI.
-- [2] Fuente oficial BPMN: https://www.omg.org/spec/BPMN/
+- [1] STRIDE (seguridad) - Wikipedia, la enciclopedia libre
+- [2] STRIDE-based Threat Modeling for Cyber-Physical Systems - Queen's University Belfast
+- [3] MODELADO DE AMENAZAS, UNA TÉCNICA DE ANÁLISIS Y GESTIÓN DE RIESGO ASOCIADO A SOFTWARE Y APLICACIONES. - Universidad Piloto de Colombia
+
 
 ---
 
