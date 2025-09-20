@@ -9,16 +9,24 @@ Taller 5: Evaluación de Seguridad con STRIDE
 - Mariana Salas Gutiérrez
 
 ## 🧠 Descripción general del trabajo
-Describa brevemente el objetivo del taller y cómo se desarrolló la actividad.
+Este informe tiene como objetivo analizar los riesgos de seguridad en una parte crítica del sistema usando el marco STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege). Como ejercicio introductorio se trabajó con un caso base (EdukIT, plataforma educativa virtual) para comprender la metodología, y luego se aplicó al cliente real (Zajana SAS), enfocado en el proceso de Fuentes de información y autorización. El análisis busca identificar amenazas, evaluar su nivel de riesgo y proponer controles de mitigación alineados con las necesidades del cliente.
 
 ## 🔧 Proceso de desarrollo
-Explique cómo realizaron el trabajo: qué decisiones tomaron, qué herramientas utilizaron, qué aspectos modelaron primero y cómo lo fueron ajustando.
+El punto de partida fue el diagrama BPMN previamente elaborado en draw.io, donde se representaron los actores principales: equipo de producto y responsable administrativo-financiero. A partir de este modelo se revisaron las actividades críticas del flujo, como el contacto inicial con la fuente prospecto, la elaboración del plan de negocio, la validación bajo gobierno de datos, la aprobación de oferta, la verificación documental y en listas restrictivas, y la firma del contrato.
+
+Sobre esta base, se decidió aplicar el marco STRIDE y construir una tabla en Excel que documenta por cada paso las amenazas identificadas, el nivel de riesgo (alto, medio o bajo), el impacto potencial y los controles de mitigación. De esta manera, el análisis se centra en traducir el modelo de proceso en un instrumento práctico de seguridad.
 
 ## 🧩 Análisis del modelo propuesto
-Incluya un análisis sobre:
-- Cómo se estructura el modelo entregado
-- Cómo representa las necesidades del cliente
-- Qué supuestos se tomaron
+El análisis se sustenta en el proceso ya modelado y se expresa en la tabla Excel elaborada bajo STRIDE, lo que permite pasar de una visión descriptiva del flujo a una evaluación de riesgos de seguridad.
+
+- **¿Cómo se estructura el modelo entregado?**
+    El entregable es una tabla de análisis de seguridad, donde se registran amenazas STRIDE para cada tarea, junto con el nivel de riesgo, el impacto y los controles recomendados con su justificación. Esto permite priorizar acciones de seguridad de manera clara.
+
+- **¿Cómo representa las necesidades del cliente?**
+    Responde a la necesidad del cliente de reforzar la seguridad en un proceso clave que maneja información sensible y autorizaciones. Al ubicar riesgos en puntos como el contacto inicial, la verificación documental o la firma del contrato, se generan recomendaciones prácticas alineadas con políticas de cumplimiento y gobierno de datos.
+
+- **¿Qué supuestos se tomaron?**
+    Se asumió que la infraestructura tecnológica actual (en particular los servicios de Azure) garantiza trazabilidad y consistencia en la automatización del proceso. No obstante, se contemplaron riesgos como suplantación de identidades, manipulación de documentos o filtración de información en el intercambio de datos.
 
 ## 📈 Diagrama final entregado
 > (Inserte aquí una imagen o enlace al modelo-final.drawio / .asta / PDF)
