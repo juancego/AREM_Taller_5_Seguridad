@@ -31,11 +31,22 @@ El análisis se sustenta en el proceso ya modelado y se expresa en la tabla Exce
 ## 📈 Excel final entregado
 ![Tabla de STRIDE](./tabla-stride-cliente.png)
 
-## 📋 Tabla de actores, entidades o componentes (si aplica)
+📋 **Tabla de actores, entidades o componentes – Caso Zajana**
 
-| Nombre del elemento | Tipo | Descripción | Responsable |
-|---------------------|------|-------------|-------------|
-| Ej: Paciente        | Actor | Usuario que agenda una cita médica | Cliente |
+| Nombre del elemento        | Tipo                       | Descripción                                                                 | Proveedor       |
+|-----------------------------|----------------------------|-----------------------------------------------------------------------------|-------------------|
+| Cliente                     | Actor                      | Usuario externo que accede al sistema para solicitar o consultar certificados e información financiera. | Cliente           |
+| Dispositivos Zajana         | Actor / Dispositivo        | Equipos de la empresa Zajana desde los cuales acceden administradores y analistas. | Zajana            |
+| Administrador Zajana        | Actor                      | Usuario interno con permisos avanzados de gestión y emisión de certificados. | Zajana            |
+| Backend (Azure Web App)     | Componente (Aplicación)    | Lógica de negocio que procesa solicitudes de usuarios y gestiona la emisión de certificados. | Zajana            |
+| Azure APIM (API Gateway)    | Componente (Infraestructura) | Punto central de acceso a las APIs, controla seguridad, validación de tokens y rate limiting. | Azure    |
+| Azure Front Door + Firewall | Componente (Infraestructura) | Protección contra ataques DDoS y control de tráfico global, con reglas de firewall para acceso seguro. | Azure             |
+| Cosmos DB y SQL Database    | Componente (Base de Datos) | Bases de datos que almacenan información financiera, usuarios y registros de certificados. | Azure            |
+| Azure Storage               | Componente (Repositorio)   | Almacenamiento de documentos digitales y respaldos de certificados. | Azure            |
+| VPN Gateway                 | Componente (Infraestructura) | Conexión segura entre dispositivos de Zajana y la nube. | Zajana            |
+| Defender for Cloud          | Servicio de seguridad      | Supervisión y protección continua contra amenazas en la nube. | Azure             |
+| Microsoft Authenticator     | Servicio de autenticación  | Provee MFA para proteger el acceso de usuarios internos y externos. | Azure  |
+| Azure Sentinel              | Servicio de monitoreo      | Correlaciona eventos de seguridad y genera alertas de incidentes. | Azure    |
 
 ## 🔍 Investigación complementaria
 ### Tema investigado:
