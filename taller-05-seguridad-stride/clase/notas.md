@@ -30,6 +30,7 @@ Durante la sesión se trabajó en el análisis y modelado de un proceso crítico
 
 ## 🧩 Boceto inicial del modelo
 
+![Tabla de STRIDE](./tabla-stride-clase.png)
 ![Flujo de emisión de certificados en EdukIT](./flujo-stride-clase.drawio.png)
 
 El diagrama modela el proceso de emisión de certificados en EdukIT, identificado como crítico por su valor legal y reputacional. El flujo inicia con la solicitud del estudiante y atraviesa diferentes validaciones y tareas hasta la entrega y registro final del certificado. A lo largo del proceso se incorporaron las amenazas del marco STRIDE, lo que permitió relacionar cada actividad con riesgos de seguridad específicos y con los controles planteados en la tabla de análisis.
