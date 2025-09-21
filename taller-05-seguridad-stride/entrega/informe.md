@@ -38,7 +38,7 @@ El análisis se sustenta en el proceso ya modelado y se expresa en la tabla Exce
 | Cliente                     | Actor                      | Usuario externo que accede al sistema para solicitar o consultar certificados e información financiera. | Cliente           |
 | Dispositivos Zajana         | Actor / Dispositivo        | Equipos de la empresa Zajana desde los cuales acceden administradores y analistas. | Zajana            |
 | Administrador Zajana        | Actor                      | Usuario interno con permisos avanzados de gestión y emisión de certificados. | Zajana            |
-| Backend (Azure Web App)     | Componente (Aplicación)    | Lógica de negocio que procesa solicitudes de usuarios y gestiona la emisión de certificados. | Zajana            |
+| Backend (Azure Web App)     | Componente (Aplicación)    | Lógica de negocio que procesa solicitudes de usuarios y gestiona la emisión de certificados. | Azure       |
 | Azure APIM (API Gateway)    | Componente (Infraestructura) | Punto central de acceso a las APIs, controla seguridad, validación de tokens y rate limiting. | Azure    |
 | Azure Front Door + Firewall | Componente (Infraestructura) | Protección contra ataques DDoS y control de tráfico global, con reglas de firewall para acceso seguro. | Azure             |
 | Cosmos DB y SQL Database    | Componente (Base de Datos) | Bases de datos que almacenan información financiera, usuarios y registros de certificados. | Azure            |
