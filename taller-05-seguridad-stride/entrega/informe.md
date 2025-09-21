@@ -4,9 +4,9 @@
 Taller 5: Evaluación de Seguridad con STRIDE
 
 ## 👥 Integrantes del equipo
-- Juan David Cetina Gómez
-- Ana Lucía Quintero Vargas
-- Mariana Salas Gutiérrez
+- Juan David Cetina Gómez (juancego@unisabana.edu.co)
+- Ana Lucía Quintero Vargas (anaquiva@unisabana.edu.co)
+- Mariana Salas Gutiérrez (marianasalgu@unisabana.edu.co)
 
 ## 🧠 Descripción general del trabajo
 Este informe tiene como objetivo analizar los riesgos de seguridad en una parte crítica del sistema usando el marco STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege). Como ejercicio introductorio se trabajó con un caso base (EdukIT, plataforma educativa virtual) para comprender la metodología, y luego se aplicó al cliente real (Zajana SAS), enfocado en el proceso de Fuentes de información y autorización. El análisis busca identificar amenazas, evaluar su nivel de riesgo y proponer controles de mitigación alineados con las necesidades del cliente.
@@ -28,8 +28,8 @@ El análisis se sustenta en el proceso ya modelado y se expresa en la tabla Exce
 - **¿Qué supuestos se tomaron?**
     Se asumió que la infraestructura tecnológica actual (en particular los servicios de Azure) garantiza trazabilidad y consistencia en la automatización del proceso. No obstante, se contemplaron riesgos como suplantación de identidades, manipulación de documentos o filtración de información en el intercambio de datos.
 
-## 📈 Diagrama final entregado
-> (Inserte aquí una imagen o enlace al modelo-final.drawio / .asta / PDF)
+## 📈 Excel final entregado
+![Tabla de STRIDE](./tabla-stride-cliente.png)
 
 ## 📋 Tabla de actores, entidades o componentes (si aplica)
 
